@@ -22,7 +22,9 @@ _Note: this is not a replacement for a monitoring/alerting solution, but can aug
 
 ## Usage
 
-Degradable comes out of the box with two adapters:
+Degradable comes out of the box with two adapters, one for operating in application memory and one for coordinating across multiple instances of the application via Redis.
+
+In the following example, we're using [`Pennant` for feature flags](https://github.com/jgaskins/pennant) and Slack for notifications. When the failure rate reaches 20% (and a minimum number of total checks to avoid wild swings with a low sample size), we will notify our team via the `#degradations` Slack channel and automatically disable the feature flag.
 
 ### In-memory adapter
 
