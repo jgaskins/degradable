@@ -4,7 +4,7 @@ Automatically degrade a feature when failure rate reaches a certain threshold. T
 
 - Toggling off feature flags
 - Disabling a service entirely
-- Notifying 
+- Notifying the team when any of these has happened
 
 _Note: this is not a replacement for a monitoring/alerting solution, but can augment your alerts by automatically disabling the functionality that is firing them off._
 
