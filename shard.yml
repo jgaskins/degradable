@@ -1,0 +1,13 @@
+name: degradable
+version: 0.1.0
+
+authors:
+  - Jamie Gaskins <jgaskins@hey.com>
+
+development_dependencies:
+  redis:
+    github: jgaskins/redis
+
+crystal: 1.1.0
+
+license: MIT
